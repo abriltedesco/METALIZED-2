@@ -1,0 +1,1148 @@
+body{
+    background-color: black;
+    color: white ;
+    font-family: "Roboto", sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    display: flex;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 1cm;
+}
+
+#contenedor{
+    background-color: rgb(70, 70, 70);
+    width: 95%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu a{  
+    display: none;
+}
+
+.menu ul{
+    margin-left: -26px;
+}
+
+#inicio, #descubre{
+display: none;
+}
+
+.seccionUsuario{
+    display: inline-block;
+    background-color: black;
+    float: right;
+    justify-content: center;
+    margin: 5px 7px 0px 7px;
+}
+
+.seccionUsuario h2{
+    display: none;
+}
+
+.seccionUsuario img{
+    width: 40px;
+    height: 40px; 
+    float: right;
+    margin-top: -3px;
+    border-radius: 100%;
+}
+
+#mi_libreria p{
+    display:none;
+}
+
+.nyl h2{
+    display: none;
+}
+
+.nyl{
+    display: inline-block;   
+    justify-content: center;
+    align-content: center;
+    width: 45px;
+    height: 45px;
+    padding: 0px;
+    margin: 0px;
+    margin-left: -2px;
+}
+
+.menu{
+    margin-top: 5%;
+    height: 60%;
+    font-size: 20px;
+    font-weight: bold;  
+    border-top: 1px solid rgb(109, 109, 109);
+}
+
+.menu ul li{
+    list-style-type: none;
+    list-style: none;
+    margin: 15px 5px;
+    align-items: center;
+    height: 23px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+#uno{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABcklEQVRIS8WUvUpDMRTHm0EqSPEVCl1cXLR+0XcQRwUHRx/BxaVbX8PPyUEcfIEqrSguTm6+gKA4WAu9/Z3SSBoTkpv2YuDQm5Pk/zsn5zSqVPBQBeuXgoAsy+4JYgm7xE6VUp08QcUAMkvwlfkZdgLsLQTLA7hCbBubM0TbfJ9LdsA+XLBoAAKK61pEZBfbxxqYPt/j+0auELtla1/DcgHMCIFVx6ADfmvG2guA5akBFmyDuYAOxS/ZzhSgxchq1BD/CyCIOkFsYt+YdM67HZWrW8QXzIANTfYdGwLSetI5E2knARCX1pM2cw7zXlMBTxxcKRLwiXjFA+iRwby9FlOv335lcxeBdQ+gA2DLXIutlwnYQ+DCA9gBcK3X8tRr4qlwRCWaR4i3rOgfma/G1OvPWwRkjYNyHQPsDvFnx91/4VvwAH44U9ZrwcfOJUIQD/glENfoApA/6mikAqLrlQSQyGLrlQwYQ4L1mgrg6yLTPwRDHqwZvGmMwQAAAABJRU5ErkJggg==");
+}
+
+#dos{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACFElEQVRIS9WVSyiEURTHfWVhYUFeyaNIsVGsSBYWGglTNqQ8IlIeKeWxodh5boQyZrxSSimUpEZZKKyEUjaivEpTQpIyfkffJ+V+8w2luPXru/fcc87/nnPvoAX88tB+OX/A3xXwer2dVD+qadq9ry74rIAkzQQ3QjycwRAJJ7EXMl+FfcjG9mgmYipAkm6CehSB7SIELqiCMQTkEMqhFCB5Mt7H8AIVsAk2mIFXSAIPnEMwRCJyp1IwE6jDeUIgsN4IRHhWF6zBPsV6hXUR2FlLy74MM4FaPB3gJFDm74OE0pZqqMXuZL3EvBgKWK99R0BacALSonJwQz5Miw6kwBVcQCgkInDqt4B+2i6+vYqgDpL1c3q56FbYZZ2pSi42q2cqr0OeqvFMB0jmInkTthE96QPfduzj36rA7ER6dTF8S6EEMnTfRbEhJC38GF8q4HRB7MrLaYEEhZD0ehgcJHvGv5L5tN6NNmyDpgI4x7G5AXKJVuMIBxsJr4iThzAHTxCP7dYI/qgAp0CMe5AOl3oVO5+d8QnHngXyG4mCLfZzJBl763zyoBNbn0qgAeMo3EAaTtdmJZAslr1DCIEyfBew2ZkvwzbrbJXAAcZUKMdh3qo/JDR+7W78c1lLRXKoW9YRKgHpn1xwtK/TG4H6fcnfIg/+YWYH+nwH788LZ7//CSFiGeN3MquWWVbw0wRWcf+/gjcwhsIZM/rlcAAAAABJRU5ErkJggg==");
+}
+
+#tres{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB+0lEQVRIS7WVzSsFURjG7yx8RhZs5PMulKRL+QMoKR9ZYMGGhQgLLJSFCCmxsPCRYqNYKHG7KSmliKWwkY+kKxsWLBQlH9fv1bkaY2buHbpTT2fmPc/7POec98w5mivCjxZhfZetQSAQiGEAdaAcFIBsEAB+cAw2gVfTtFergVoaIF5B0qwStZvoJZ3tmGybkUwNEB+CPOhg+T7g9mIyYcz5ZWAifk/SHcgLw7Abkyk974cB4tV0rusIXt5bQSlYCcNAZlKMyX6Q+22AeALBC5CqOhcgNss7fYU0R2EYCOUMeIKF1xt0qKIK6RrkCAnxXt7HgJMtXUOuT4T0Bht8V6pRdkKYMVmyMCfhmie/zWhwQyBdKbgh+DHYkTVVsVXafhAFxnWDMTM9JL/IaPBMIE6xo9XyPPEdr2IpxGRHSU3cNFc203mAm2w0eCSQaJOUStKtMsiklTpZPY9wk4wGpwRybZLW6OtTsxwNsUQnGOQbDZYJNNgYOOlawqDJaNBIYNGJig23HoOvH1O/TaXA5yDjnyaiUYDByw8DVbwy2q1/GMhRUYL4XlDD7LCTvT7yR5MuxKf1uVbH9QCkYf0ShjB8p78H8Ukjz+7CqYI8B9JCiMuF04L4rhkv1JUZS1ItkDPKA7KAXJnyFx+oevkQf7MahJMT8k9libjBJ4ofoBlOdyqIAAAAAElFTkSuQmCC")
+}
+
+.nyl img{
+    width: 42px;
+    height: 42px;
+    justify-content: center;
+    align-content: center;
+}
+
+main{
+    width: 95%;
+    margin-left: 10px;
+    margin-right: -7px;
+    height: 100%;
+    float: right;
+    padding: 10px;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+
+.solapa{
+    width: 100px;
+    height: 43px;
+    float: left;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px;
+}
+
+.solapa h1{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+
+.barra_horizontal{
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+    justify-content: space-around;
+    background-color: black;
+    height:45px;
+    margin-bottom: 0px;
+}
+
+.barraBusq{
+    background-color: rgb(0, 0, 0);
+    border: black;
+    margin-left: 190px;
+    width: 30px;
+}
+
+.barraBusq img{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+.barraBusq h3{
+    display: none;
+}
+
+#imagenCancion img{
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+}
+
+#artista{
+    overflow-y: auto;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    height: 78vh;
+    margin-top: 5px;
+    padding: 2px;
+}
+
+.fotoynombre img{
+    width: 30%;
+    height: 70%;
+    margin: 3px;
+    border-radius: 100%;
+    float: left;
+}
+
+.fotoynombre{
+    display: inline-block;
+    align-content: center;
+    padding: 5px;
+    width: 97%;
+    height: 20%;
+    margin-bottom: 5px;
+}
+
+.duracion, .tituloC{
+    margin-bottom: 0px;
+}
+
+.info{
+    display:block;
+    float: right;
+    width:65%;
+}
+
+.info h1{
+    font-size: 20px;
+    margin: 10px 20px 10px 3px;
+}
+
+.nombre{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 55%;
+    margin-bottom: 5px;
+}
+
+.info p{
+    margin-top: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+/*-----------------------------------------------*/
+#contenedor2{
+    width: 100%;
+    height: 50%;
+    display: block;
+}
+
+#canciones{
+    width: 95%;
+    height: 50%;
+    padding: 10px;
+}
+
+#canciones h1, #albumes h1{
+    font-size: 19px;
+    margin: 5px;
+}
+
+.cancion{
+    width: 95%;
+    height: 15%;
+    margin: 5px;
+    display: inline-block;
+    position: relative; 
+}
+
+.cancion:hover{
+    cursor:pointer;
+    background-color: #000000;
+}
+
+.cancion img{
+    float: left; 
+    width: 70px;
+    height: 70px; 
+}
+
+#albumes{
+    width: 95%;
+    padding: 10px;
+}
+
+.info-popular{
+   width: 70%;
+   height: 20%;
+   float:right;    
+}
+
+.info-popular h3{
+    font-size: 14px;
+}
+
+#canciones{
+    width:95%;
+    height: 50%;
+}
+
+.album{
+    width: 95%;
+    height: 20%;
+    margin: 5px;
+    display: inline-block;
+    position: relative; 
+}
+
+.album:hover{
+    cursor:pointer;
+    background-color: #000000;
+}
+
+.album img{
+    float: left; 
+    width: 70px;
+    height: 70px; 
+}
+
+.album h3{
+    width: 70%;
+    float: right;
+    font-size: 15px;
+    margin: 25px 5px;
+}
+
+/*-----------*/
+footer{
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    background-color:#811212;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px; 
+    align-items: flex-end;
+}
+
+#imagenCancion{
+    float: left;
+    width: 70%;
+    margin-top: 2%;
+}
+
+#imagenCancion img{
+    margin: 3px;
+    margin-right: 0px;
+    width: 20%;
+    height: 20% ;
+}
+
+#infoCancion{
+    float: right;
+    width: 75%;
+    height: 25%;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#infoCancion h2{
+    font-size: 16px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#infoCancion h3{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.651);
+    margin-top: 0px;
+}
+
+#barraProgreso{
+    display:none;
+}
+
+#barraProgreso-responsive{
+    display: flex;
+    background-color: #5f1010;
+    height: 3px;
+    width: 95%;;
+    margin-left: 1.25%;
+    margin-right: 1.25%;
+}
+
+.progress-responsive {
+    height: 3px;
+    border-radius: 5px;
+    background-color: #000000;
+    justify-content: center;
+}
+
+.progress-bar-responsive {
+    height: 100%;
+    display: flex;
+    background-color: #0e0e0e;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#barraReproductora-iconos{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding-top: 15%;
+}
+
+#barraReproductora-iconos img{
+    width: 22px;
+    height: 22px;
+    margin: 4px;
+}
+
+#repetir, #aleatorio{
+    display: none;
+}
+
+#barraReproduccion{
+    width: 30%;
+    height: 90%;
+    margin: 0;
+    margin-top: 2%;
+    float: left;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+
+@media (min-width: 590px){
+    main{
+        margin-left: 0px;
+    }
+    header{
+        width: 6cm;
+    }
+    #contenedor{
+        background-color: rgb(70, 70, 70);
+        width: 95%;
+        height: 100%;
+        float: left;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .nyl{
+        width: 80%;
+        height: 22%;
+        display: inline-block;   
+        justify-content: center;
+        align-content: center;
+        margin: 15px;
+        margin-left: 10%;
+        margin-right: 10%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .nyl img{
+        width: 120px;
+        height: 120px;
+        justify-content: center;
+        align-content: center;
+    }
+    .seccionUsuario h2{
+        display:flex;
+        float: left;
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        color: #8E1717;
+        font-size: 16px;
+    } 
+    .nyl h2{
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu a{  
+        display: flex;
+    }
+    
+    .menu ul{
+        margin-left: -26px;
+    }
+    
+    #inicio, #descubre, #mi_libreria p{
+        display: flex;
+    }
+    
+    .menu{
+        display:block;
+        margin-top: 5%;
+        height: 60%;
+        font-size: 20px;
+        font-weight: bold;  
+        border-top: 1px solid rgb(109, 109, 109);
+    }
+    
+    .menu ul li{
+        list-style-type: none;
+        list-style: none;
+        margin: 15px 5px;
+        align-items: center;
+        height: 23px;
+    }
+    
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    
+    #uno, #dos, #tres, #inicio, #descubre{
+        justify-self: center;
+        align-items: center;
+    }
+    
+    #uno, #dos, #tres{
+        margin: 8px 3px 10px 3px;
+        padding-bottom:9px;
+        height: 22px;
+        align-items: center;
+    }
+    #artista{
+        padding: 5px;
+    }
+
+    .fotoynombre{
+        height: 30%;
+    }
+    .info{
+        height: 50%;
+    }
+    .contenedor2{
+        width:100%;
+        display: inline-block;
+    }
+}
+
+@media (min-width: 500px){
+    footer{
+        display: inline-block;
+        width: 100%;
+        height: 10%;
+        background-color:#811212;
+        color: white;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 7px; 
+        align-items: flex-end;
+    }
+
+    #repetir, #aleatorio{
+        display: inline-block;
+    }
+
+    #imagenCancion{
+        float: left;
+        width: 40%;
+        height: 90%;
+        margin: 0px;
+    }
+    
+    #imagenCancion img{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+    
+    #infoCancion{
+        width: 60%;
+        height: 100%;
+        margin-left: 5px;
+        float: right;
+        align-content: center;
+    }
+    
+    #infoCancion h2{
+        font-size: 18px;
+        color: black;
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    
+    #infoCancion h3{
+        font-size:15px;
+        color: rgba(0, 0, 0, 0.651);
+        margin-top: 0px;
+    }
+    
+    #imagenCancion img{
+        margin: 3px;
+        margin-bottom: 15px;
+    }
+    
+    #barraReproduccion{
+        width: 60%;
+        height: 90%;
+        display: inline-block;
+        margin: 0px;
+        float: right;
+    }
+    
+    #barraReproductora-iconos{
+        display: inline-block;
+        width: 100%;
+        height: 60%;
+        margin-top: -60px;
+        margin-left: 15%;
+    }
+    
+    #barraReproductora-iconos img{
+        margin: 15px;
+        width: 25px;
+    }
+    
+    #barraProgeso{
+        width: 15%;
+         height: 50%;
+        margin-left: 5%;
+    }
+    
+    #barraProgreso-responsive{
+        display:none;
+    }
+    
+    .progress {
+        height: 5px;
+        border-radius: 5px;
+        background-color: #5f1010;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+    
+    .progress-bar {
+        height: 100%;
+        background: #0e0e0e;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+    }   
+}
+
+@media(min-width: 693px){
+    header{
+        width: 7cm;
+    }
+
+    .barra_horizontal{
+        width: 100%;
+        height: 30%;
+        display: inline-block;
+        justify-content: space-around;
+        background-color: black;
+        margin-bottom: -5px;
+    }
+    
+    .solapa{
+        width: 20%;
+        height: 43px;
+        float: left;
+        background-color: rgb(70, 70, 70);
+        border-radius: 10px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        padding: 5px;
+    }
+    
+    .solapa h1{
+        margin-top: 5px;
+        margin-left: 5px;
+        font-size: 21px;
+    }
+    
+    .seccionUsuario {
+        display: inline-block;
+        background-color: black;
+        float: right;
+        margin-bottom: 5px;
+    }
+
+    
+    .seccionUsuario img{
+        width: 48px;
+        height: 48px;
+        float: right;
+        margin-top: -3px;
+        border-radius: 100%;
+    }
+    
+    .barraBusq{
+        display: block;
+        background-color: rgb(124, 124, 124);
+        border: 1px rgb(109, 109, 109) solid;
+        border-radius: 8px;
+        width: 35%;
+        height: 100%;
+        margin-left: 25%;
+        margin-top: 3px;
+        justify-content: center;
+    }
+    
+    .barraBusq h3{
+        display: flex;
+        font-size: 15px;
+        font-weight: 500;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        padding-left: 20px;
+    }
+    
+    .barraBusq img{
+        float: right;
+        width: 30px;
+        height: 30px;
+        margin-top: -34px;
+        padding-right: 10px;
+    }
+    #artista{
+        height: 78vh; 
+        overflow-y: auto;
+        background-color: rgb(70, 70, 70);
+        border-radius: 10px;
+        border-top-left-radius: 0px;
+        padding: 5px 12px;
+    }
+}
+
+@media(min-width: 720px){
+    #canciones{
+        padding: 10px;
+        width: 45%;
+        float: left;
+    }
+    
+    #canciones h1, #albumes h1{
+        font-size: 23px;
+        margin-left: 5px;
+    }
+    
+    .cancion{
+        width: 100%;
+        height: 20%;
+        margin: 5px;
+        display: inline-block;
+        position: relative; 
+    }
+    
+    .cancion::after {
+        width: 37px;
+        height: 45px;
+        content: "▶"; 
+        font-size: 25px; 
+        padding-top: 15px;
+        padding-left: 23px;
+        position: absolute; 
+        top: 50%; 
+        right: 58%;
+        transform: translate(-50%, -50%); 
+        color: white;
+        background-color: #5e5e5ec7;
+        border-radius: 100%;
+        opacity: 0; 
+        transition: opacity 0.3s; 
+    }
+    
+    .cancion:hover::after {
+        opacity: 1;
+    }
+    
+    .cancion:hover{
+        cursor:pointer;
+        background-color: #000000;
+    }
+    
+    .cancion img{
+        float: left; 
+        width: 80px;
+        height: 80px; 
+    }
+    
+    .info-popular{
+        width: 65%;
+        height: 80px;
+        display: inline-block;
+        margin: 0px;
+    }
+    
+    .tituloC{
+        font-size: 18px;
+        margin: 7.5% 5px  7.5% 15px ;
+    }
+    
+    .duracion{
+        font-size: 18px;
+        margin: 3% 5px ;
+        margin-left: 15px;
+    }
+    
+    #albumes{
+        width: 45%;
+        height: 70%;
+        padding: 10px;
+        float: right;
+    }
+    
+    .album{
+        padding: 5px;
+        margin: 0px;
+        text-align: center;
+        position:relative;
+    }
+    
+    .album::after {
+        width: 37px;
+        height: 45px;
+        content: "▶"; 
+        font-size: 25px; 
+        padding-top: 15px;
+        padding-left: 13px;
+        padding-right: 10px;
+        position: absolute; 
+        top: 37%; 
+        right: 15%;
+        transform: translate(-50%, -50%); 
+        color: white;
+        background-color: #5e5e5ec7;
+        border-radius: 100%;
+        opacity: 0; 
+        transition: opacity 0.3s; 
+    }
+    
+    .album:hover::after {
+        opacity: 1;
+    }
+    
+    .album:hover{
+        cursor:pointer;
+        background-color: #000000;
+    }
+    
+    .album img{
+        width: 200px;
+        height: 200px;
+        margin-left: 8px;
+    }
+    
+    .album h3{
+        display:none;
+    }   
+}
+
+@media (min-width: 850px){
+    #contenedor{
+        background-color: rgb(70, 70, 70);
+        width: 95%;
+        height: 100%;
+        float: left;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .nyl{
+        width: 90%;
+        height: 25%;
+        display: inline-block;   
+        justify-content: center;
+        align-content: center;
+        margin: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .nyl img{
+        width: 170px;
+        height: 170px;
+        justify-content: center;
+        align-content: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .nyl h2{
+        display: block;
+        margin: 5% 5px 5% 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .menu a{  
+        display: flex;
+    }
+    
+    .menu ul{
+        margin-left: -10px;
+    }
+    
+    #inicio, #descubre, #mi_libreria p{
+        display: flex;
+    }
+    
+    .menu{
+        display:block;
+        margin-top: 5%;
+        height: 60%;
+        font-size: 20px;
+        font-weight: bold;  
+        border-top: 1px solid rgb(109, 109, 109);
+    }
+    
+    .menu ul li{
+        list-style-type: none;
+        list-style: none;
+        margin: 15px 5px;
+        align-items: center;
+        height: 23px;
+    }
+    
+    a{
+        text-decoration: none;
+        color:white;
+    }
+    #mi_libreria li{
+        font-weight: lighter;
+    }
+    
+    #uno, #dos, #tres{
+        margin: 8px 3px 10px 3px;
+        padding-bottom:9px;
+        height: 22px;
+        align-items: center;
+    }
+    #artista{
+        height: 76vh;
+    }
+
+    header{
+        width: 8cm;
+    }
+
+    .fotoynombre{
+        height: 30%;
+    }
+    .fotoynombre img{
+        width: 180px;
+        height: 180px;
+        margin: 5px;
+    }
+    .info{
+        height:85%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .info p{
+        font-size: 18px;
+    }
+    .info h1{
+        font-size: 25px;
+    }
+
+    .contenedor2{
+        margin-top:10px;
+    }
+
+    #gridAlbums{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 7px;
+    }
+
+    #canciones{
+        width: 55%;
+    }
+    .cancion::after {
+        left: 10%; 
+    }
+
+    .info-popular{
+        width: 80%;
+    }
+
+    .tituloC{
+        font-size: 20px;
+        margin-top: 6%;
+    }
+
+    .duracion{
+        font-size: 15px;
+    }
+
+    #albumes{
+        width: 35%;
+    }
+
+    .album{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        text-align: center;
+        margin-top: 5px;
+    }
+    .album img{
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+    }
+    .tituloC{
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .duracion{
+        margin-top: 0px;
+    }
+    .album::after{
+        top: 50%;
+        left: 53%;
+    }
+    .album:hover{
+        cursor:pointer;
+        background-color: none;
+    }
+    .album h3{
+        display: none;
+    }
+
+    #repetir, #aleatorio{
+        display: inline-block;
+    }
+
+    #imagenCancion{
+        float: left;
+        width: 45%;
+        height: 90%;
+        margin: 0px;
+    }
+    
+    #imagenCancion img{
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+    
+    #infoCancion{
+        width: 75%;
+        height: 100%;
+        margin-left: 5px;
+        float: right;
+        align-content: center;
+    }
+    
+    #infoCancion h2{
+        margin:0px;
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: black;
+    }
+    
+    #infoCancion h3{
+        margin:0px;
+        font-size:15px;
+        color: rgba(0, 0, 0, 0.651);
+        margin-top: 0px;
+    }
+    
+    #imagenCancion img{
+        margin: 3px;
+        margin-bottom: 15px;
+    }
+    
+    #barraReproduccion{
+        width: 50%;
+        height: 90%;
+        display: inline-block;
+        margin: 0px;
+        float: right;
+    }
+    
+    #barraReproductora-iconos{
+        display: inline-block;
+        width: 100%;
+        height: 60%;
+        margin-top: -60px;
+        margin-left: 15%;
+    }
+    
+    #barraReproductora-iconos img{
+        margin: 15px;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (min-width: 1010px){
+    .fotoynombre{
+        height: 40%;
+    }
+    .fotoynombre img{
+        width: 200px;
+        height: 200px;
+    }
+    .info{
+        width: 70%;
+        height: 90%;
+        align-content: center;
+    }
+    .contenedor2{
+        margin-top: 3%;
+    }
+    #canciones {
+        width: 42%;
+    }
+    #albumes{
+        width: 50%;
+    }
+    .cancion::after {
+        left: 13%; 
+    }
+    #canciones h1, #albumes h1{
+        margin-bottom: 10px;
+    }
+    .cancion img{
+        width: 90px;
+        height:90px;
+    }
+    #gridAlbums{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 5px;
+    }
+        
+    #infoCancion{
+        width: 82%;
+    }
+}
+
+@media(min-width: 1200px){
+    .cancion::after {
+        left: 9%; 
+    }
+    .fotoynombre img{
+        width: 250px;
+        height: 250px;
+    }
+    #barraReproductora-iconos{
+        margin-top: -90px;
+    }
+}
+
+@media(min-width: 1500px){
+    #barraReproductora-iconos{
+        margin-top: -110px;
+    }
+}

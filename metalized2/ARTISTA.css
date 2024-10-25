@@ -1,0 +1,462 @@
+body{
+    background-color: black;
+    color: white ;
+    font-family: "Roboto", sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    display: flex;
+}
+
+/* ------------ HEADER (MENU) --------------- */
+header{
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+    width: 8cm;
+}
+
+#contenedor1{
+    background-color: rgb(70, 70, 70);
+    width: 95%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.nyl{
+    height: 22%;
+    display: inline-block;   
+    justify-content: center;
+    align-content: center;
+    margin: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nyl img{
+    width: 120px;
+    height: 120px;
+    justify-content: center;
+    align-content: center;
+}
+
+.nyl h2{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.menu{
+    height: 60%;
+    font-size: 20px;
+    font-weight: bold;  
+    border-top: 1px solid rgb(109, 109, 109);
+}
+
+.menu ul li{
+    list-style-type: none;
+    list-style: none;
+    margin: 15px 5px;
+    align-items: center;
+    height: 23px;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+#uno, #dos, #tres, #cuatro, #cinco{
+    justify-self: center;
+    align-items: center;
+}
+
+#uno, #dos, #tres, #cuatro, #cinco{
+    margin: 8px 3px 10px 3px;
+    padding-bottom:9px;
+    height: 22px;
+    align-items: center;
+}
+
+
+#uno{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABcklEQVRIS8WUvUpDMRTHm0EqSPEVCl1cXLR+0XcQRwUHRx/BxaVbX8PPyUEcfIEqrSguTm6+gKA4WAu9/Z3SSBoTkpv2YuDQm5Pk/zsn5zSqVPBQBeuXgoAsy+4JYgm7xE6VUp08QcUAMkvwlfkZdgLsLQTLA7hCbBubM0TbfJ9LdsA+XLBoAAKK61pEZBfbxxqYPt/j+0auELtla1/DcgHMCIFVx6ADfmvG2guA5akBFmyDuYAOxS/ZzhSgxchq1BD/CyCIOkFsYt+YdM67HZWrW8QXzIANTfYdGwLSetI5E2knARCX1pM2cw7zXlMBTxxcKRLwiXjFA+iRwby9FlOv335lcxeBdQ+gA2DLXIutlwnYQ+DCA9gBcK3X8tRr4qlwRCWaR4i3rOgfma/G1OvPWwRkjYNyHQPsDvFnx91/4VvwAH44U9ZrwcfOJUIQD/glENfoApA/6mikAqLrlQSQyGLrlQwYQ4L1mgrg6yLTPwRDHqwZvGmMwQAAAABJRU5ErkJggg==");
+}
+
+#dos{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACFElEQVRIS9WVSyiEURTHfWVhYUFeyaNIsVGsSBYWGglTNqQ8IlIeKeWxodh5boQyZrxSSimUpEZZKKyEUjaivEpTQpIyfkffJ+V+8w2luPXru/fcc87/nnPvoAX88tB+OX/A3xXwer2dVD+qadq9ry74rIAkzQQ3QjycwRAJJ7EXMl+FfcjG9mgmYipAkm6CehSB7SIELqiCMQTkEMqhFCB5Mt7H8AIVsAk2mIFXSAIPnEMwRCJyp1IwE6jDeUIgsN4IRHhWF6zBPsV6hXUR2FlLy74MM4FaPB3gJFDm74OE0pZqqMXuZL3EvBgKWK99R0BacALSonJwQz5Miw6kwBVcQCgkInDqt4B+2i6+vYqgDpL1c3q56FbYZZ2pSi42q2cqr0OeqvFMB0jmInkTthE96QPfduzj36rA7ER6dTF8S6EEMnTfRbEhJC38GF8q4HRB7MrLaYEEhZD0ehgcJHvGv5L5tN6NNmyDpgI4x7G5AXKJVuMIBxsJr4iThzAHTxCP7dYI/qgAp0CMe5AOl3oVO5+d8QnHngXyG4mCLfZzJBl763zyoBNbn0qgAeMo3EAaTtdmJZAslr1DCIEyfBew2ZkvwzbrbJXAAcZUKMdh3qo/JDR+7W78c1lLRXKoW9YRKgHpn1xwtK/TG4H6fcnfIg/+YWYH+nwH788LZ7//CSFiGeN3MquWWVbw0wRWcf+/gjcwhsIZM/rlcAAAAABJRU5ErkJggg==");
+}
+
+#tres{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB+0lEQVRIS7WVzSsFURjG7yx8RhZs5PMulKRL+QMoKR9ZYMGGhQgLLJSFCCmxsPCRYqNYKHG7KSmliKWwkY+kKxsWLBQlH9fv1bkaY2buHbpTT2fmPc/7POec98w5mivCjxZhfZetQSAQiGEAdaAcFIBsEAB+cAw2gVfTtFergVoaIF5B0qwStZvoJZ3tmGybkUwNEB+CPOhg+T7g9mIyYcz5ZWAifk/SHcgLw7Abkyk974cB4tV0rusIXt5bQSlYCcNAZlKMyX6Q+22AeALBC5CqOhcgNss7fYU0R2EYCOUMeIKF1xt0qKIK6RrkCAnxXt7HgJMtXUOuT4T0Bht8V6pRdkKYMVmyMCfhmie/zWhwQyBdKbgh+DHYkTVVsVXafhAFxnWDMTM9JL/IaPBMIE6xo9XyPPEdr2IpxGRHSU3cNFc203mAm2w0eCSQaJOUStKtMsiklTpZPY9wk4wGpwRybZLW6OtTsxwNsUQnGOQbDZYJNNgYOOlawqDJaNBIYNGJig23HoOvH1O/TaXA5yDjnyaiUYDByw8DVbwy2q1/GMhRUYL4XlDD7LCTvT7yR5MuxKf1uVbH9QCkYf0ShjB8p78H8Ukjz+7CqYI8B9JCiMuF04L4rhkv1JUZS1ItkDPKA7KAXJnyFx+oevkQf7MahJMT8k9libjBJ4ofoBlOdyqIAAAAAElFTkSuQmCC")
+}
+
+#cuatro{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABjElEQVRIS72VPUvEQBCGb71CbaysFEQU4X6CYGut2F2jhVraKIIn+HGC+NFoY6mCYGF3jVjZCv4DBcFDESsrGxFO47MyWZaY1dtszsDL5GPmfTKTZKMKLd5Ui/0LPwBRFI0D3UElT/gN+YtKqQu7Lg3wREKvp3mcfg9g8C9ApBNI9BofnafWpXXwvwBubIyGtqTtVWI7WkOfqEKj5/pa5g4ofKC+z/FMzMxDAHXM+x2AOh0MhHYwhcGJAzAJ4DQIIMVV4noCUsV8Iz6XeUSWwSH7M3J8hPmsDcwD0IZhDb2jMgD9FpktGCCj6iA2MG8kn0kuAMeD/j4dDMCgE58FgezRxVsuI8K4iNE00m9Sj5g+y/ExoI/MHWA+QfEuGhLja4nDEu+IS0Bq3iOi8AqNiNGjGJ3J3ZYFHC8hJje5CjtXUzF+JW6jfQr162k27lgvevNoGXXFF5oF6LnqD2uFghfbOLkPqJtzm0h/eMVmAJckzpF4+5txCkj/Yg+oG7Wvef21fIBmZFmKfGq+AIhv5BkYWo60AAAAAElFTkSuQmCC")
+}
+
+#cinco{
+    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAy0lEQVRIS2NkoDFgpLH5DKMWwEP4////V4AcbZgAIxCA2PAgAir4T058wAxC108zC2AGw31Cjqux6YH5YOAsoFYc4PQBzS2gNC6GRhwghy/QxcFAX1cBsR4QvwVicXDGgmYwjGRKTBwgZSp3oAE7sAUrVZIp0DGngIab0tKCL0DDubFY8BvoAzZkcZLKIqQgOgo0xAqLBceBalDEybXAGWj4HiwWOAItOIDVB6TmA2A8BAD11AOxBhBfBeJmoOEb0c0ZrdEIhizNgwgAYc1mGaNV2V8AAAAASUVORK5CYII=");
+}
+
+.milibreria{
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+/* ------------ HEADER (MENU) --------------- */
+
+/* ++++++++++++ MAIN (INICIO) +++++++++++ */
+main{
+    display:block;
+    width: 85%;
+    height: 100%;
+    float: right;
+    padding: 10px;
+    justify-content: space-around;
+    margin-top: -10px;
+}
+
+/**/
+.barra_horizontal{
+    width: 100%;
+    height: 15%;
+    display: inline-block;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.solapa{
+    width: 15%;
+    height: 43px;
+    float: left;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px;
+}
+
+.solapa h1{
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 21px;
+}
+.seccionUsuario {
+    display: inline-block;
+    background-color: black;
+    float: right;
+}
+
+.seccionUsuario h2{
+    float: left;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #8E1717;
+    font-size: 16px;
+} 
+
+.seccionUsuario img{
+    width: 48px;
+    height: 48px;
+    float: right;
+    margin-top: -3px;
+    border-radius: 100%;
+}
+
+.barraBusq{
+    background-color: rgb(124, 124, 124);
+    border: 1px rgb(109, 109, 109) solid;
+    border-radius: 8px;
+    width: 30%;
+    height: 20%;
+    margin-left: 25%;
+    justify-content: center;
+}
+
+.barraBusq h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-left: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.barraBusq img{
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-top: -34px;
+    padding-right: 10px;
+}
+/**/
+
+/**/
+.descripcion{
+    width: 100%;
+    height: 20%;
+    display: inline-block;
+}
+
+.descripcion h2{
+    font-size: 18px;
+    width: 60%;
+    text-align: start;
+    float: left;
+    margin: 0px;
+}
+
+.descripcion h3{
+    font-size: 15px;
+    width: 35%;
+    padding-right: 10px;
+    text-align: end;
+    float: right;
+    margin: 0px;
+    color:rgb(168, 167, 167)
+}
+
+#artistas {
+    height: 75vh; 
+    overflow-y: auto;
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    padding: 5px 12px;
+}
+
+#populares, #masEscuchados, #masTiempoSinEscuchar{
+    margin: 15px;
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+}
+
+.slides {
+    overflow: hidden;
+    width: 80%;
+    position: relative;
+}
+
+.slide-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.contenedorArtista {
+    min-width: 20%;
+    box-sizing: border-box;
+    padding: 0px; 
+}
+
+/* Estilos para los botones */
+.seccionBoton {
+    flex: 0 0 50px; /* Ancho fijo para los botones */
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #333; /* Color de fondo de los botones */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button:hover {
+    background-color: #555; /* Color de fondo al pasar el ratón */
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin: 0px;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; /* Ajusta el tamaño según necesites */
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+    width: 150px; /* Ancho de cada imagen */
+    height: 150px;
+    margin: 0 0px;
+}
+
+.prev-btn, .next-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+.contenedorArtista img{
+    width: 150px;
+    align-content: center;
+    justify-content: center;
+    margin: 5%;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+button{
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: white; 
+    border: none;
+    padding: 10px; 
+    cursor: pointer; 
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+button:hover{
+    background-color: rgba(46, 46, 46, 0.5); 
+}
+
+.seccionBoton{
+    width: 5%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.artista {
+    font-size: 15px;
+    margin: 0px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 400;
+    justify-content: center;
+    color: rgb(29, 29, 29);
+}
+
+
+/* '''''''''''''' FOOTER (BARRA REP) '''''''''''''''*/
+footer{
+    display: inline-block;
+    width: 100%;
+    height: 10%;
+    background-color:#811212;
+    color: white;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 7px; 
+    align-items: flex-end;
+}
+
+#imagenCancion{
+    float: left;
+}
+
+#imagenCancion img{
+    width: 60px;
+    height: 60px;
+    margin: 3px;
+}
+
+#infoCancion{
+    margin-left: 5px;
+    float: right;
+}
+
+#infoCancion h2{
+    font-size: 15px;
+    color: black;
+    margin-top: 20%;
+    margin-bottom: 5%;
+}
+
+#infoCancion h3{
+    font-size:12px;
+    color: rgba(0, 0, 0, 0.651);
+    margin-top: 0px;
+}
+
+#imagenCancion img{
+    margin: 3px;
+    margin-bottom: 15px;
+}
+
+#barraReproduccion{
+    width: 40%;
+    display: block;
+    margin-left: 35%;
+}
+
+#barraProgreso-responsive{
+    display:none;
+}
+
+#barraReproductora-iconos{
+    height: 55%;
+    margin-top: 0px;
+    margin-left: 20%;
+}
+
+#barraProgreso-responsive{
+    display:none;
+}
+
+#barraReproductora-iconos img{
+    margin: 15px;
+    width: 25px;
+}
+
+#barraProgeso{
+    width: 15%;
+    height: 50%;
+    margin-left: 5%;
+}
+
+.progress {
+    height: 5px;
+    border-radius: 5px;
+    background-color: #5f1010;
+    margin-bottom: 15px;
+    justify-content: center;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #0e0e0e;
+    display: flex;
+    align-items: center;
+    transition: width 0.25s;
+    border-radius: 5px;
+}

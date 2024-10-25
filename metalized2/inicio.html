@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="calavera.png">
+    <style>
+    
+    @font-face {
+        font-family: 'Deicide Remain';
+        src: url('IPM/metalized/Deicide-Remain.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    header h1 {
+        font-size: 20px;
+        font-family: 'Deicide Remain', sans-serif;
+            }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
+    </style>
+    <link rel="stylesheet" href="inicio.css" type="text/css"/>
+    <title>Metalized</title>
+</head>
+<body>
+    <div class="logo-contenedor">
+        <img src="calavera.png" alt="Logo" class="logoC">
+    </div>
+
+    <div id="contenedor">
+        <main>
+            <div id="bienvenida">
+                <h2>Bienvenido!</h1>
+                <p>Acá encontrarás tu música favorita. 
+                <br>Un reproductor exclusivamente de rock, metal y sus subgéneros. <br>
+                Registrate y empezá a escuchar la música de verdad</p>
+            </div>
+                
+            <section class="form">
+                <div class="formulario">
+                    <form action="inicio.php" method="post">
+                    <input class="username" type="text" name="nombreUser" placeholder="Nombre de Usuario" required>
+                    <input class="email" type="email" name="email" placeholder="Email" required>  
+                    <input class="password" type="password" name="contraseña" placeholder="Contraseña" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+                </div>
+                <p>Si ya tenes una cuenta ingresá <a href="login.html">acá</a></p>
+            </section>
+    
+            <div id="logo">
+                    <img src="calavera.png"> 
+            </div>
+        </main>    
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logoContainer = document.querySelector('.logo-contenedor');
+            logoContainer.addEventListener('animationend', function() {
+                logoContainer.classList.add('fade-out-complete'); 
+            });
+        });
+    </script>
+</body>
+</html>
