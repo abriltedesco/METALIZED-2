@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+    color: white ;
+}
+
+header{
+    padding: 10px;
+    width:100%;
+    height:100%;
+    border-bottom: 2px solid grey;
+}
+
+h1{
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main{
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+
+.formulario{
+    width: 45%;
+    margin-left: 50px;
+    margin-top: 80px;
+    margin-right: 0;
+    float: left;
+}
+
+.formulario p{
+    margin-left: 5px;
+    color: gray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.formulario p a{
+    color:white;
+}
+
+.formulario button a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+input{
+    border: 5px gray bold ;
+}
+
+input, button{
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    margin: 10px;
+    background-color: white ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    background-color: darkred;
+    border-color:darkred;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.fotoytexto{
+    width: 45%;
+    float:right;
+    margin-top: 30px;
+}
+
+div h2{
+    margin: 5%;
+    width: 50%;
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.fotoytexto img{
+    width: 350px;
+    height: 350px;
+}
